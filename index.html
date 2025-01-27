@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 90s Website</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 1rem;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .ascii-art {
+            white-space: pre;
+            font-family: monospace;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        nav {
+            margin: 2rem 0;
+        }
+
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .counter {
+            text-align: center;
+            margin-top: 2rem;
+            border: 1px solid #00ff00;
+            padding: 0.5rem;
+        }
+
+        marquee {
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="blink">Welcome to My Website</h1>
+        <div class="ascii-art">
+           /\___/\
+          (  o o  )
+          (  =^=  ) 
+           (m___m)~
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#guestbook">GUESTBOOK</a>
+    </nav>
+
+    <marquee>🚧 Under Construction! Please excuse the dust! 🚧</marquee>
+
+    <main>
+        <h2>&gt; About Me</h2>
+        <p>Greetings, fellow netizen! I'm a [your role] passionate about [your interests].</p>
+
+        <h2>&gt; My Projects</h2>
+        <p>Check out my latest work!</p>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+        </ul>
+    </main>
+
+    <div class="counter">
+        Visitors: 000042
+    </div>
+</body>
+</html>
