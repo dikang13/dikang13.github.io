@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>candy.home</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: "Courier New", Courier, monospace;
+            max-width: 1800px;
+            margin: 1rem auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            text-align: left;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .ascii-art {
+            white-space: pre;
+            font-family: monospace;
+            text-align: left;
+            margin: 1.25rem 0;
+        }
+
+        nav {
+            margin: 1rem 0;
+            border-top: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        nav a {
+            color: #ffff00;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        nav a:hover {
+            color: #ffff00;
+            text-decoration: underline;
+        }
+
+        marquee {
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="blink">Congratulations!</h1>
+        <h2 style="font-size: 1.7rem">You've found Di Kang. Thank you for dropping by.</h2>
+        <div class="ascii-art">
+             /\__/\   /\__/\   /\__/\
+            ( o o )  ( o o )  ( o o )
+            ( =^= )  ( =^= )  ( =^= )
+            (m___m)~ (m___m)~ (m___m)~
+        </div>
+    </header>
+
+    <style>
+        nav a {
+            font-size: 1.1rem;
+        }
+    </style>
+    <nav>
+        <a href="profession.html">self.professional()</a>
+        <a href="adventure.html">self.adventurous()</a>
+        <a href="outreach.html">self.outreaching()</a>
+        <a href="contact.html">contact(candy)</a>
+    </nav>
+
+    <div style="height: 20px;"></div>
+
+    <main>
+        <h2 style="font-size: 1.6rem;">> Di Kang (candy) in a nutshell</h2>
+        <p>
+        <p>Declared "hello world!" in the rad 90s 👶</p>
+        <p>Leveled up to netizen status at Y2K 🌐</p>
+        <p>Evolved into a physician-coder hybrid in the 2010s 🏥</p>
+        <p>Now diving deep into biological intelligence as a PhD explorer 🧠</p>
+        <br>
+        <h2 style="font-size: 1.6rem;">> Next mission</h2>
+        <p>Mixing these powers to craft personalized medicine 💊</p>
+        <p>& spark tech-powered changes that make human life enjoyable ✨</p>
+    </main>
+    
+    <div style="text-align: center; margin-top: 40px; border: 2px solid #ffffff; display: inline-block; padding: 10px;">
+        <div style="font-family: 'Courier New', monospace; font-size: 1rem;">
+            Visitor #
+            <span id="visitorCount" style="color: #ffff00;">00001</span>
+        </div>
+    </div>
+    
+    <script>
+        window.onload = function() {
+            // Get the current count from localStorage
+            let count = localStorage.getItem('visitorCount');
+            
+            // Initialize or increment the counter
+            if (!count) {
+                count = 1;
+            } else {
+                count = parseInt(count) + 1;
+            }
+            
+            // Save the new count (fixed this line)
+            localStorage.setItem('visitorCount', count);
+            
+            // Format the number with leading zeros
+            const formattedCount = count.toString().padStart(5, '0');
+            
+            // Update the display
+            document.getElementById('visitorCount').textContent = formattedCount;
+        };
+    </script>
+
+    <div style="height: 20px;"></div>
+    <marquee>🚧 Under Construction! Please excuse the dust! 🚧</marquee>
+</body>
+</html>
